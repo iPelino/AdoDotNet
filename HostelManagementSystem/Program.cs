@@ -16,7 +16,15 @@ namespace HostelManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenu());
+            var formLogin = new FormLogin();
+            if (formLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FormMenu());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }
