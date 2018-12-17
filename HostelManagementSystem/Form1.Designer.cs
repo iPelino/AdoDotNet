@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Register Student");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("View Students");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Students", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Register Student");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("View Students");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Students", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -60,16 +60,17 @@
             this.treeView1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode4.Name = "NodeAddStudent";
-            treeNode4.Text = "Register Student";
-            treeNode5.Name = "NodeViewStudent";
-            treeNode5.Text = "View Students";
-            treeNode6.Name = "NodeStudent";
-            treeNode6.Text = "Students";
+            treeNode1.Name = "NodeAddStudent";
+            treeNode1.Text = "Register Student";
+            treeNode2.Name = "NodeViewStudent";
+            treeNode2.Text = "View Students";
+            treeNode3.Name = "NodeStudent";
+            treeNode3.Text = "Students";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
+            treeNode3});
             this.treeView1.Size = new System.Drawing.Size(209, 672);
             this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // FormMenu
             // 

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HostelManagementSystem
 {
-    public partial class FormMenu : Form
+    public partial class FormAddStudent : Form
     {
-        public FormMenu()
+        public FormAddStudent()
         {
             InitializeComponent();
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-            
         }
     }
 }
